@@ -668,7 +668,7 @@ public class mainFrame extends javax.swing.JFrame {
                 .addComponent(btnKaryawan, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
 
         panelIsi.setBackground(new java.awt.Color(255, 255, 255));
@@ -924,7 +924,7 @@ public class mainFrame extends javax.swing.JFrame {
         );
         panelPengembalianLayout.setVerticalGroup(
             panelPengembalianLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 558, Short.MAX_VALUE)
+            .addGap(0, 557, Short.MAX_VALUE)
         );
 
         panelIsi.add(panelPengembalian, "card4");
@@ -939,7 +939,7 @@ public class mainFrame extends javax.swing.JFrame {
         );
         panelPeminjamanLayout.setVerticalGroup(
             panelPeminjamanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 558, Short.MAX_VALUE)
+            .addGap(0, 557, Short.MAX_VALUE)
         );
 
         panelIsi.add(panelPeminjaman, "card5");
@@ -1264,7 +1264,7 @@ public class mainFrame extends javax.swing.JFrame {
                     .addComponent(lbl_cari_karyawan)
                     .addComponent(txt_cari_karyawan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_batal_karyawan))
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         panelIsi.add(panelKaryawan, "card7");
@@ -1611,7 +1611,7 @@ public class mainFrame extends javax.swing.JFrame {
                     .addComponent(btn_kembali_pegawai))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_batal_pegawai)
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
 
         panelIsi.add(panelTambahPegawai, "card9");
@@ -1749,7 +1749,7 @@ public class mainFrame extends javax.swing.JFrame {
                     .addComponent(jLabel39)
                     .addComponent(rd_ubah_pria)
                     .addComponent(rd_ubah_wanita))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
                 .addGroup(panelUbahPegawaiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel40)
                     .addComponent(txt_ubah_telp_pegawai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1819,7 +1819,7 @@ public class mainFrame extends javax.swing.JFrame {
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(jLabel47)
-                .addContainerGap(209, Short.MAX_VALUE))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
 
         panelIsi.add(panelHome, "card2");

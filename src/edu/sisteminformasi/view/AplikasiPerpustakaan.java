@@ -20,7 +20,7 @@ public class AplikasiPerpustakaan {
       //main.setVisible(true);
         //anggotaFrame anggota = new anggotaFrame();
         //anggota.setVisible(true);
-      mainFrame pegawai = new mainFrame();
+      anggotaFrame pegawai = new anggotaFrame();
       pegawai.setVisible(true);
    
     }

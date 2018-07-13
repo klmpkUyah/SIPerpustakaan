@@ -36,7 +36,7 @@ public class anggotaFrame extends javax.swing.JFrame {
         tbl_anggota.setModel(tableBuku);
         
         settableloadbuku();
-        
+        login2.setVisible(false);
         
     }
     
@@ -122,7 +122,8 @@ public class anggotaFrame extends javax.swing.JFrame {
         tbl_anggota = new javax.swing.JTable();
         cmb_cari = new javax.swing.JComboBox<>();
         txt_cari = new javax.swing.JTextField();
-        btn_login = new javax.swing.JButton();
+        login2 = new javax.swing.JLabel();
+        login1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -155,8 +156,24 @@ public class anggotaFrame extends javax.swing.JFrame {
         });
         jPanel1.add(txt_cari, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 234, -1));
 
-        btn_login.setText("LOGIN");
-        jPanel1.add(btn_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 220, -1, -1));
+        login2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/sisteminformasi/view/logintombol22.png"))); // NOI18N
+        login2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                login2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(login2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 180, -1, -1));
+
+        login1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/sisteminformasi/view/logintombol1.png"))); // NOI18N
+        login1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                login1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                login1MouseExited(evt);
+            }
+        });
+        jPanel1.add(login1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 180, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/sisteminformasi/view/bgpencarian.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 640));
@@ -226,6 +243,27 @@ public class anggotaFrame extends javax.swing.JFrame {
         };  
     }//GEN-LAST:event_txt_cariKeyReleased
 
+    private void login1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_login1MouseEntered
+        // TODO add your handling code here:
+        login1.setVisible(false);
+        login2.setVisible(true);
+    }//GEN-LAST:event_login1MouseEntered
+
+    private void login1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_login1MouseExited
+        // TODO add your handling code here:
+        login2.setVisible(false);
+        login1.setVisible(true);
+    }//GEN-LAST:event_login1MouseExited
+
+    private void login2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_login2MouseClicked
+        // TODO add your handling code here:
+        anggotaFrame r = new anggotaFrame();
+        
+        login l = new login();
+        l.setVisible(true);
+        r.dispose();
+    }//GEN-LAST:event_login2MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -262,11 +300,12 @@ public class anggotaFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_login;
     private javax.swing.JComboBox<String> cmb_cari;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel login1;
+    private javax.swing.JLabel login2;
     private javax.swing.JTable tbl_anggota;
     private javax.swing.JTextField txt_cari;
     // End of variables declaration//GEN-END:variables
