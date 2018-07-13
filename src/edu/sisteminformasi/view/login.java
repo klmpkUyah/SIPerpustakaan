@@ -33,6 +33,8 @@ public class login extends javax.swing.JFrame {
     private void initComponents() {
 
         loginAdmin = new javax.swing.JPanel();
+        submit2 = new javax.swing.JLabel();
+        submit = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jTextField4 = new javax.swing.JTextField();
@@ -58,6 +60,17 @@ public class login extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         loginAdmin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        submit2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/sisteminformasi/view/submit2.png"))); // NOI18N
+        loginAdmin.add(submit2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 460, -1, -1));
+
+        submit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/sisteminformasi/view/submit11.png"))); // NOI18N
+        submit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                submitMouseEntered(evt);
+            }
+        });
+        loginAdmin.add(submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 460, -1, -1));
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -225,6 +238,12 @@ public class login extends javax.swing.JFrame {
         loginAdmin.setVisible(true);
     }//GEN-LAST:event_ceklis2MouseClicked
 
+    private void submitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_submitMouseEntered
+        // TODO add your handling code here:
+        submit.setVisible(false);
+        submit2.setVisible(true);
+    }//GEN-LAST:event_submitMouseEntered
+
     /**
      * @param args the command line arguments
      */
@@ -281,5 +300,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JPanel loginAdmin;
     private javax.swing.JPanel loginawal;
     private javax.swing.JPanel loginkaryawan;
+    private javax.swing.JLabel submit;
+    private javax.swing.JLabel submit2;
     // End of variables declaration//GEN-END:variables
 }
